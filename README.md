@@ -1,5 +1,5 @@
 # Multiple-Choice-Answering
-This model is a question answering model, based on multiple choices. Given a question and a possible set of answers, choose the correct one. Traditional Machine learning techniques use a inefficient approach of sending each answer and question to the model and getting the probability score and then selecting answer with the highest score. But here for each question we have to run the model multiple times.
+This model is a question answering model, based on multiple choices. Given a question and a possible set of answers, choose the correct one. Traditional Machine learning techniques use a inefficient approach of sending each answer and question to the model and getting the probability score and then selecting answer with the highest score. Here for each question we have to run the model multiple times.
 So, this is an architecture which in one pass of the model gets the answer. I treated this a Question Answering system but here we limited our answer space. So I used an approach to encode to all the answers into a single entity and gave the model, which is able to identify the correct using a start token and the end token. The text lying between them is the answer.
 
 # Output
